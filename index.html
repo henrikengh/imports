@@ -7,6 +7,15 @@
     <link rel="import" href="/imports/blog-post.html">
   </head>
   <body>
-    <p>Hello World!</p>
+    <body>
+  <p>Hello World!</p>
+
+  <script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('#blog-post');
+    document.body.appendChild(document.importNode(content, true));
+  </script>
+</body>
   </body>
 </html>
+
